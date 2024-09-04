@@ -1,0 +1,43 @@
+name: aqua_expert
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 5.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_localization: ^0.2.0
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  pdfrx: ^1.0.74
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/docs/
+
+  fonts:
+    - family: Changa
+      fonts:
+        - asset: assets/fonts/Changa-Regular.ttf
+    - family: Kufam
+      fonts:
+        - asset: assets/fonts/Kufam-Regular.ttf
+
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/core/utils/
+  filename: app_assets.dart
